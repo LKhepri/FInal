@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>FitFusion Gym Membership</title>
+    <link rel="stylesheet" type="text/css" href="Gym2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">About us</a></li>
+                <li><a href="trainer.html">GymTrainer</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Apply for a life-changing membership!</h1>
+
+    <p>To make a reservation at FitFusion Gym and ensure a wonderful workout experience, follow these simple steps:</p>
+
+    <ol>
+        <li><strong>Contact Us:</strong> Feel free to reach out to our team by calling our reservation hotline at <a href="tel:+15551234567">(555) 123-4567</a>. Our friendly staff is ready to assist you in scheduling your reservation.</li>
+
+        <li><strong>Online Memberships:</strong> Explore our website at <a href="membership.html">www.fitfusiongym.com</a> and click on the "Memberships" tab. Complete the online membership form, indicating your preferences such as membership type and any specific requests.</li>
+
+        <li><strong>Visit Our Location:</strong> For a more personalized experience, drop by FitFusion Gym at 123 Fitness Lane, Cityville, Fitnessland, FIT123, and speak with our front desk team who will guide you through the membership process.</li>
+
+        <li><strong>Booking Trainers:</strong> Check out our featured trainers on our <a href="trainer.html">Trainers Page</a> or <a href="Trainer.html">another listing</a> to find your preferred trainer at FitFusion Gym and make a reservation through these platforms.</li>
+    </ol>
+
+    <div class="parallax"></div>
+
+    <form id="membershipForm" onsubmit="return calculateTotal()">
+        <label for="membership-type">Select Membership Type:</label>
+        <select id="membership-type" name="membership-type">
+            <option value="">Select Membership Type</option>
+            <option value="basic" data-price="30.00">Basic Membership ($30.00/month)</option>
+            <option value="premium" data-price="50.00">Premium Membership ($50.00/month)</option>
+            <option value="gold" data-price="80.00">Gold Membership ($80.00/month)</option>
+        </select>
+        <br><br>
+
+        <label for="credit-card-number">Credit Card Number:</label>
+        <input type="text" id="credit-card-number" name="credit-card-number" placeholder="Enter your credit card number" required>
+        <br><br>
+
+        <label for="expiration-date">Expiration Date:</label>
+        <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YYYY" required>
+        <br><br>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+        <br><br>
+
+        <label for="name">Name on Card:</label>
+        <input type="text" id="name" name="name" placeholder="Enter the name on your card" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        <br><br>
+
+        <p id="totalCost">Total Cost: $0.00</p>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+
+    <script>
+        function calculateTotal() {
+            var membershipType = document.getElementById('membership-type');
+            var selectedMembership = membershipType.options[membershipType.selectedIndex];
+            var membershipPrice = selectedMembership.getAttribute('data-price');
+            var totalCost = parseFloat(membershipPrice).toFixed(2);
+            document.getElementById('totalCost').innerText = 'Total Cost: $' + totalCost;
+            return false;
+        }
+    </script>
+
+    <br>
+    <br>
+
+    <footer>
+        FitFusion Gym • 456 Fitness Avenue, Cityville, Energyscape &nbsp; FIT5678 • (555) 987-6543
+    </footer>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const trainer = params.get('trainer');
+        const time = params.get('time');
+        const date = params.get('date');
+      
+        // Display the parameters on the page
+        document.body.innerHTML = `<h1>Your date is Confirmed! You are going to be with ${trainer} on the day ${date} at ${time} at one of our locations!  </h1>`;
+                                   
+      </script>
+      
+</body>
+</html>

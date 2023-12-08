@@ -1,0 +1,157 @@
+/* Reset some default styles for better consistency across browsers */
+body, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    display: block;
+    flex-direction: column;
+    max-width: fit-content;
+    margin: 0;
+    text-align: center;
+    background-image: url("fitfusion3.png");
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-attachment: fixed; /* Apply parallax effect */
+    border: 4px double rgb(0, 0, 0);
+    border-radius: inherit;
+    height: 100vh; /* Use viewport height for full screen height */
+   border-style: groove;
+}
+/* Rest of your CSS styles */
+
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    display:block;
+    flex-direction:column;
+    padding-bottom: 400px; 
+    margin: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0a0707;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: rgb(247, 246, 246);
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+
+p {
+    text-align:center
+}
+.section {
+    flex: 1;
+    margin: 10px;
+    background-image: url("mine.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    z-index: 1; /* Set a lower z-index */
+}
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #473434;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+    background: white;
+    display: justify;
+    justify-content: space-between;
+    align-items: auto; /* Center the items vertically */
+    list-style: none;
+    background-image: url("fitfusion7.png");
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    max-width: min-content;
+    background-clip: border-box;
+    background-color: #000;
+    position: top;
+    top:0;
+    padding:10px;
+    z-index: 1000;
+    margin: 0;
+}
+
+nav ul {
+    display: justify;
+    list-style: none;
+    margin: 20;
+    padding: 0;
+    align-items: center;
+}
+
+nav {
+    background-color: rgba(255, 253, 253, 0.5); /* Semi-transparent black background */
+    padding: 0px;
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav li {
+    margin-right: 1000px; /* Adjust spacing between list items */
+}
+
+nav a {
+    color: #f5f5f5; /* Blue color */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 25px; /* Adjust the font size as needed */
+    transition: color 0.3s, font-size 0.3s; /* Add a transition for color and font size */
+    border: #000;
+}
+
+nav a:hover {
+    color: #ffffff; /* Black color on hover */
+    font-size: 50px; /* Increase font size on hover */
+    border: #000;
+}
+
+
+/* Common Styles for Pages */
+h1, h2 {
+    color: #fdfdfd;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .container {
+        flex-direction: column;}
+}
+@media (max-width:480px) {
+
+}

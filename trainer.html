@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+   <meta charset="utf-8" />
+   <title>FitFusion Gym Trainers</title>
+   <link rel="stylesheet" type="text/css" href="Gym.css">
+   <head>
+</head>
+
+<body>
+   <header>
+      <nav>
+         <ul>
+            <li><a href="index.html">About us</a></li>
+            <li><a href="trainer.html">GymTrainer</a></li>
+            <li><a href="membership.html">Membership</a></li>
+         </ul>
+      </nav>      
+   </header>
+   <article>
+      <p>To reserve your workout session and choose your preferred trainer at FitFusion Gym, follow these straightforward steps:</p>
+ 
+      <ol>
+        <li><strong>Contact Us:</strong> Reach out to our team by dialing our reservation hotline at <a href="tel:+15551234567">(555) 123-4567</a>. Our friendly staff is ready to assist you in scheduling your workout session.</li>
+        
+        <li><strong>Select Your Trainer:</strong> Explore our <a href="trainer.html">Trainers </a> to find and select your preferred trainer at FitFusion Gym. Make a reservation through these platforms to ensure availability.</li>
+        <div class parallax>
+         <a href="fitfusion7.png" alt="Employees"></a>
+        </div>
+        <form onsubmit="return onSubmit()">
+          <label for="trainer">Select Your Trainer:</label>
+          <select id="trainer" name="trainer">
+            <option value="" >Choose Your Trainer</option>
+            <option value="John Doe">John Doe</option>
+            <option value="Jane Smith">Jane Smith</option>
+            <option value="Alex Jones">Alex Jones</option>
+          </select>
+          <br><br>
+          <br><br>
+      
+          <label for="appointment-time">Select Appointment Time:</label>
+<select id="appointment-time" name="appointment-time" required>
+   <option value="" >Choose Time</option>
+   <option value="7am">7:00 AM</option>
+   <option value="8am">8:00 AM</option>
+   <option value="9am">9:00 AM</option>
+   <option value="10am">10:00 AM</option>
+   <option value="11am">11:00 AM</option>
+   <option value="12pm">12:00 PM (Noon)</option>
+   <option value="1pm">1:00 PM</option>
+   <option value="2pm">2:00 PM</option>
+   <option value="3pm">3:00 PM</option>
+   <option value="4pm">4:00 PM</option>
+   <option value="5pm">5:00 PM</option>
+   <option value="6pm">6:00 PM</option>
+   <option value="7pm">7:00 PM</option>
+   <option value="8pm">8:00 PM</option>
+   <option value="9pm">9:00 PM</option>
+   <option value="10pm">10:00 PM</option>
+   <option value="11pm">11:00 PM</option>
+   <option value="12am">12:00 AM (Midnight)</option>
+</select>
+<br><br>
+
+<label for="appointment-date">Select Appointment Date:</label>
+<input type="date" id="appointment-date" name="reservation-date" required>
+<br><br>
+
+<label for="location-map">Select one of our location's on the Map:</label>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3118.881080707738!2d-122.08375728436481!3d37.38605156761548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba1a7d8d50cd%3A0x5c4a5c24e9301263!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1640485298082!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<br><br>
+
+      
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter the name" required>
+          <br><br>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          <br><br>
+      
+          <input type="submit" value="Submit">
+          <input type="reset" value="Clear">
+          <script>
+            function onSubmit() {
+              // Get selected values
+              var selectedTrainer = document.getElementById('trainer').value;
+              var selectedTime = document.getElementById('appointment-time').value;
+              var selectedDate = document.getElementById('appointment-date').value;
+            
+              // Redirect to confirmation page with query parameters
+              var confirmationPage = 'confirmationpage.html';
+              confirmationPage += '?trainer=' + encodeURIComponent(selectedTrainer);
+              confirmationPage += '&time=' + encodeURIComponent(selectedTime);
+              confirmationPage += '&date=' + encodeURIComponent(selectedDate);
+            
+              window.location.href = confirmationPage;
+            
+              // Prevent the form from submitting (for demonstration purposes)
+              return false;
+            }
+            </script>
+        </form>
+      </ol>
+      
+
+   </article>
+   <footer>
+      FitFusion Gym • 456 Fitness Avenue, Cityville, Energyscape &nbsp; FIT5678 • (555) 987-6543
+   </footer>
+</body>
+</html>

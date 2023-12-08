@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 10px;
+            height: 100vh;
+        }
+
+        .grid-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+        }
+
+        .grid-item img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        .image1 {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+        }
+
+        .image2 {
+            grid-column: 3 / span 2;
+            grid-row: 3 / span 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item image1">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="grid-item text">
+            <p>FitFusion Gym provides an amazing fitness experience! The trainers are knowledgeable, and the facilities are top-notch.</p>
+        </div>
+        <div class="grid-item text">
+            <p>FitFusion Gym is the best place to achieve your fitness goals. The community and support are unparalleled.</p>
+        </div>
+        <div class="grid-item text">
+            <p>Joining FitFusion Gym was a game-changer for me. The variety of programs and friendly atmosphere make it exceptional.</p>
+        </div>
+        <div class="grid-item image2">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="grid-item text">
+            <p>FitFusion Gym is not just a gym; it's a lifestyle. The trainers and members create a positive and motivating environment.</p>
+        </div>
+        <div class="grid-item text">
+            <p>FitFusion Gym has transformed my fitness journey. The personalized approach and state-of-the-art equipment make it stand out.</p>
+        </div>
+        <div class="grid-item text">
+            <p>FitFusion Gym is where fitness meets community. It's more than a gym; it's a family dedicated to well-being and success.</p>
+        </div>
+        <div class="grid-item text">
+            <p>FitFusion Gym is the place to be for a healthier, happier you. The supportive environment ensures success in your fitness journey.</p>
+        </div>
+        <div class="grid-item text">
+            <p>FitFusion Gym - where fitness dreams become a reality. Join us on the path to a stronger, fitter, and better you!</p>
+        </div>
+        <div class="grid-item text">
+            <p>FitFusion Gym is my fitness haven. The expert trainers and diverse programs make every workout enjoyable and effective.</p>
+        </div>
+        <div class="grid-item text">
+            <p>FitFusion Gym offers a transformative fitness experience. I've achieved more than I thought possible with their guidance.</p>
+        </div>
+        <div class="grid-item text">
+            <p>FitFusion Gym is the key to unlocking your full fitness potential. The welcoming community and professional trainers make it extraordinary.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
